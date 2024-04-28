@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>YUMMY</title>
+</head>
+<body>
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+    <div class="side-navbar min-vh-100 bg-black d-flex position-fixed top-0 z-3">
+        <div class="left-side d-flex flex-column justify-content-between">
+            <div class="menu-list overflow-hidden">
+                <ul class="list-unstyled text-white p-3 mt-4 position-relative">
+                    <li onclick="showSearchDetails() ; closeNav()">Search</li>
+                    <li onclick="getMealsCategories() ; closeNav()">Categories</li>
+                    <li onclick="getFilteredAreas() ; closeNav()">Area</li>
+                    <li onclick="getFilteredIng() ; closeNav()">Ingredients</li>
+                    <li onclick="displayContactUs() ; closeNav()">Contact Us</li>
+                </ul>
+            </div>
+        <div class="copyrights text-white p-3">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </a>
+            <p>Copyrights © 2024 All Rights
+                Reserved.</p>
+        </div>
+        </div>
+        <div class="right-side d-flex flex-column justify-content-between py-3 text-black">
+            <div class="logo m-2">
+                <img src="imgs/logo.png" alt="logo" class="w-100">
+            </div>
+            <a href="#" class="menu-icon w-100 text-center">
+                <i class="fa-solid fa-bars fs-3 "></i>
+                <i class="fa-solid fa-xmark fs-1 d-none"></i>
+            </a>
+            <a href="#" class="other-links text-center d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </a>
+        </div>
+    </div>
+    
+
+    <div class="container w-75" id="search">
+    </div>
+    <div class="container mt-3">
+        <div class="row g-4 my-4" id="dataContainer">
+            
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
